@@ -1,10 +1,13 @@
 /* Global */
-body {
+html, body {
+  height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0d1117;
   color: #e6edf3;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -23,6 +26,11 @@ header h1 {
 header p {
   margin-top: 10px;
   color: #8b949e;
+}
+
+/* Main content wrapper */
+main {
+  flex: 1;
 }
 
 /* Hero Section */
@@ -148,29 +156,9 @@ a:hover {
 }
 
 /* Responsive for mobile */
-@media (max-width: 600px) {
-  .contact-buttons {
-    flex-direction: column;
-  }
-  .button {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* Responsive Cards */
 @media (max-width: 768px) {
-  .card {
-    width: 100%;
-    margin: 10px 0;
-  }
-
   section {
     padding: 20px 10px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
   }
 
   .hero h2 {
@@ -179,6 +167,15 @@ a:hover {
 
   .hero p {
     font-size: 0.95rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
   }
 }
 
@@ -195,6 +192,7 @@ a:hover {
   }
 }
 
+/* Images & Projects */
 img {
   max-width: 100%;
   height: auto;
