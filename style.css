@@ -158,6 +158,54 @@ a:hover {
   }
 }
 
+/* Responsive Cards */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
 /* Footer */
 footer {
   text-align: center;
