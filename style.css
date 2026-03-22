@@ -99,6 +99,65 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact p a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.contact-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* LinkedIn Button */
+.button.linkedin {
+  background-color: #0a66c2;
+  color: white;
+}
+
+.button.linkedin:hover {
+  background-color: #004182;
+}
+
+/* CV Download Button */
+.button.cv {
+  background-color: #28a745;
+  color: white;
+}
+
+.button.cv:hover {
+  background-color: #1c6b30;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .contact-buttons {
+    flex-direction: column;
+  }
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;
