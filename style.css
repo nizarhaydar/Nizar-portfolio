@@ -1,53 +1,110 @@
+/* Global */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0d1117;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
   color: #e6edf3;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  text-align: center;
-  padding: 40px;
   background: #161b22;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #30363d;
 }
 
-h1 {
+header h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
+header p {
+  margin-top: 10px;
+  color: #8b949e;
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 60px 20px;
 }
 
-section {
-  padding: 40px;
-  max-width: 900px;
-  margin: auto;
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #c9d1d9;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  border-left: 4px solid #58a6ff;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
 .card {
   background: #161b22;
   padding: 20px;
-  margin: 15px 0;
+  margin-bottom: 15px;
   border-radius: 10px;
+  border: 1px solid #30363d;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+}
+
+/* Lists */
 ul {
   list-style: none;
   padding: 0;
 }
 
-li {
+ul li {
   background: #161b22;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  transition: background 0.2s;
 }
 
+ul li:hover {
+  background: #1f2933;
+}
+
+/* Links */
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   background: #161b22;
+  border-top: 1px solid #30363d;
+  color: #8b949e;
+  font-size: 0.9rem;
 }
